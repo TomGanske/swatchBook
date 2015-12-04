@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Contao Extension swatchBook
+ * Copyright (c) 2015-2016 Tom Ganske
+ * author     Tom Ganske (http://ct-eye.com ||  https://github.com/TomGanske)
+ * @license   LGPL-3.0+
+ */
+
 $GLOBALS['TL_DCA']['tl_swatchBookColors'] = array
 (
   'config' => array
@@ -145,14 +152,12 @@ class tl_swatchBookColors extends \Backend
      */
     public function createCSS()
     {
-        // read Config
+        // create File if doesn`t exists
         $file  = new \File('system/modules/swatchBook/assets/css/divElements.css');
 
         // result Color
         $groupPalette   = \Database::getInstance()->execute("SELECT pid,count(pid) AS count FROM tl_swatchBookColors GROUP BY pid")->fetchAllAssoc();
         $palettes       = \Database::getInstance()->execute("SELECT id,pid,title,color FROM tl_swatchBookColors")->fetchAllAssoc();
-
-        dump($groupPalette);
 
         foreach($groupPalette as $c) {
             $i = 1;

@@ -1,4 +1,10 @@
 <?php
+/**
+ * Contao Extension swatchBook
+ * Copyright (c) 2015-2016 Tom Ganske
+ * author     Tom Ganske (http://ct-eye.com ||  https://github.com/TomGanske)
+ * @license   LGPL-3.0+
+ */
 
 /**
  * Register the namespaces
@@ -8,7 +14,6 @@ ClassLoader::addNamespaces(
         'CT_EYE'
     )
 );
-
 
 /**
  * Register the classes
@@ -25,7 +30,6 @@ ClassLoader::addClasses(array
     //Module
     'CT_EYE\ModuleSwatchBook'	    => 'system/modules/swatchBook/modules/ModuleSwatchBook.php'
 ));
-
 
 /**
  * Register the templates
