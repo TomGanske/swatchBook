@@ -15,11 +15,11 @@ SwatchBook is a color pallets management extension for the **Contao CMS in Versi
 
 ####Heade Section####
 > " < script src = "system/modules/swatchBook/assets/js/modernizr.custom.79639.js" > < /script > "
-* - remove spaces in this line *
+* remove spaces in this line *
 
 ####Body Section####
 > " < script src = "system/modules/swatchBook/assets/js/jquery.swatchbook.js" > < /script > "
-* - remove spaces in this line and past it after the jquer and bootstrap JS files*
+* remove spaces in this line and past it after the jquer and bootstrap JS files*
 
 
 
