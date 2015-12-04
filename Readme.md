@@ -9,6 +9,7 @@ SwatchBook is a color pallets management extension for the **Contao CMS in Versi
 * easy to use with Bootstrap
 
 ###Instruction to get it work###
-Paste follow line into the fe_page.html5(*.xhtml)
+Paste follow line into the fe_page.html5 (*.xhtml)
 
 > "< script src = "system/modules/swatchBook/assets/js/modernizr.custom.79639.js" > < /script > "
+* - remove spaces in this line *
