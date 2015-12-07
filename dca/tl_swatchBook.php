@@ -64,12 +64,6 @@ $GLOBALS['TL_DCA']['tl_swatchBook'] = array
           'href'		=> 'act=edit',
           'icon'        => 'header.gif'
       ),
-      'copy' => array
-      (
-        'label'         => &$GLOBALS['TL_LANG']['tl_swatchBook']['copy'],
-        'href'          => 'act=copy',
-        'icon'          => 'copy.gif'
-      ),
       'delete'  => array(
           'label'       => &$GLOBALS['TL_LANG']['tl_swatchBook']['show'],
           'href'        => 'act=delete',

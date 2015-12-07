@@ -15,7 +15,7 @@ array_insert($GLOBALS['BE_MOD'],0, array('ct_eye' 	=> array
 	'swatchBook'	=> array
 	(
 		'tables' 	=> array('tl_swatchBook','tl_swatchBookColors'),
-		'icon'		=> 'system/modules/swatchBook/assets/images/swatchColorPalettes.png'
+		'icon'		=> 'system/modules/swatchBook/assets/images/swatchbook-icon.png'
 	)
 )));
 
