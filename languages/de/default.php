@@ -1,7 +1,7 @@
 <?php
 
 /* CONFIG */
-$GLOBALS['TL_LANG']['MOD']['ct_eye']                    = 'Software CT-EYE';
+$GLOBALS['TL_LANG']['MOD']['ct_eye']                    = 'CT-EYE';
 $GLOBALS['TL_LANG']['MOD']['swatchBook']                = array('SwatchBook');
 
 // Content elements
