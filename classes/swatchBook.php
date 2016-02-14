@@ -11,6 +11,9 @@ namespace CT_EYE;
 use Contao\FrontendTemplate;
 
 
+
+define('TL_EXTENSION','swatchBook');
+
 class swatchBook extends \ContentElement
 {
     protected $strTemplate = "ce_swatchBook";
@@ -51,6 +54,18 @@ class swatchBook extends \ContentElement
             $this->Template->noResult = $GLOBALS['TL_LANG']['FE']['swatchBook']['noResult'];
         }
         else {
+            /**
+             * Load Backend or Frontend
+             *  CSS/JavaScript
+             */
+            if (TL_MODE == 'FE')  //  && TL_EXTENSION == 'swatchBook'
+            {
+                $GLOBALS['TL_HEAD'][]       ='<script src="system/modules/swatchBook/assets/js/modernizr.custom.79639.js"></script>';
+                $GLOBALS['TL_JQUERY'][]     = '<script src="system/modules/swatchBook/assets/js/jquery.swatchbook.js"></script>';
+                $GLOBALS['TL_CSS'][]        = 'system/modules/swatchBook/assets/css/style.css';
+                $GLOBALS['TL_CSS'][] 	    = 'system/modules/swatchBook/assets/css/divElements.css';
+            }
+
             $source = SwatchBookModel::findMultipleByIds($arrIds);
 
             while ($source->next()) {

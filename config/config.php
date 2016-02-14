@@ -7,6 +7,14 @@
  * @license   LGPL-3.0+
  */
 
+
+/**
+ * Extension version
+ */
+@define('iHoliday_VERSION', '1.1');
+@define('iHoliday_BUILD', '0');
+
+
 /**
  * Backend
  */
@@ -23,13 +31,3 @@ array_insert($GLOBALS['BE_MOD'],0, array('ct_eye' 	=> array
  * Content elements
  */
 $GLOBALS['TL_CTE']['swatchBook']['swatchBook'] = 'swatchBook';
-
-/**
-  * Load Backend or Frontend
- *  CSS/JavaScript
- */
-if (TL_MODE == 'FE')
-{
-    $GLOBALS['TL_CSS'][]    = 'system/modules/swatchBook/assets/css/style.css';
-    $GLOBALS['TL_CSS'][] 	= 'system/modules/swatchBook/assets/css/divElements.css';
-}
