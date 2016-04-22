@@ -11,8 +11,8 @@
 /**
  * Extension version
  */
-@define('iHoliday_VERSION', '1.1');
-@define('iHoliday_BUILD', '0');
+@define('VERSION', '1.1');
+@define('BUILD', '0');
 
 
 /**
