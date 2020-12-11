@@ -40,6 +40,4 @@ SwatchBook is a color pallets management extension for the **Contao CMS in Versi
 
 
 
-> *Tom Ganske*
-
-> [Visit CT-EYE®](http://www.ct-eye.com)
+> *Tom Hell*
